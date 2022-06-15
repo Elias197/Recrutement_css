@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+body{
+    font-family: 'Lato', sans-serif;
+    background-color: #939292;
+    padding:0 ;
+    margin: 0;
+    color: black; 
+}
+body .page{
+    margin: 20px 80px;
+}
+/* Barre de navigation */
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    background-color:#939292 ;
+    padding: 10px 0px;
+}
+nav .onglets{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5px;
+}
+nav .onglets a{
+  margin-right: 20px;
+  cursor: pointer;  
+}
+nav .buttons button{
+    padding: 10px 20px;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+}
+nav .buttons .login{
+    background-color: inherit;
+    margin-right: 10px;
+    color:black;
+}
+nav .buttons .register{
+    background-color: red;
+    margin-right: 10px;
+    color: #fff;
+}
+/* Fin de la barre */
+
+/* header  */
+ header{
+    margin-top: 40px;
+    background: url(https://img.freepik.com/photos-gratuite/candidat-ayant-entretien-embauche_1163-4671.jpg?w=996&t=st=1655247143~exp=1655247743~hmac=80f704fac8989d5582a8fcfc197885e71990c72545f6bdec739511aec785d806);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+header h1{
+    text-align: center;
+    font-size: 50px;
+    padding: 200px;
+    color: rgb(199, 77, 77);
+}
+
+ /*pied de page (footer)  */
+ footer{
+    background-color: #1a1a1a;
+    padding: 25px 100px;
+    color: #828282;
+ }
+ footer .colonnes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+ }
+
+@media screen and (max-width: 640px) {
+    body .page{
+        margin: 10px;
+    }
+    nav .onglets{
+        display: none;
+    }
+    header{
+        margin-top: 20px;
+        background-size: 250px 250px;
+    }
+    header h1{
+        font-size: 30px;
+        padding: 100px;
+    }
+    
+}
